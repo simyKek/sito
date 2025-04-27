@@ -1,0 +1,93 @@
+.foto-profilo {
+    border-radius: 50px;
+    cursor:pointer;
+    width: 40px;
+}
+
+.foto-canale {
+    width: 50px;
+}
+
+.foto-canale, .video-info{
+    vertical-align: top;              
+}
+
+.thumbnail {
+    /*
+    height: 300px; 
+    Nel caso venga scelta anche l'altezza, con questi due si determina
+    come l'immagine viene visualizzata e quale sua parte
+    object-position: top;
+    object-fit: contain;
+    */
+
+    /* Impostando solo la larghezza, l'immagine cambia anche d'altezza in proporzione */
+    cursor: pointer;
+    width: 100%;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.video-autore {
+    margin-bottom: 4px;
+}
+
+.video-autore, .video-stats {
+    color: rgb(96,96,96);
+    font-size: 12px;
+}
+
+.video-grid {
+    background-color: rgb(245,245,245);
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+/*
+.video-autore, .video-stats {
+     Con display, trasforma un elemento in un altro 
+    In questo caso, BLOCCO -> INLINE BLOCK
+    display: inline-block;
+}
+*/
+.video-info {
+    width: 166px;
+}
+
+.video-info-griglia {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-preview {
+    background-color: rgb(245,245,245);
+}
+
+/* Position absolute può essere collegata ad un
+oggetto in posizione relativa in modo da farlo apparire
+sopra di esso */
+.video-time {
+    background-color: black;
+    border-radius: 2px;
+    bottom: 10px;
+    color: white;
+    cursor:pointer;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+}

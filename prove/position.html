@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tutorial Posizione</title>
+    </head>
+
+    <!--Con fixed, la posizione del div NON muta,
+    anche scorrendo la pagina.
+    Top permette di indicare la distanza
+    dalla parte alta della pagina del browser;
+    la stessa cosa succede con left, right e bottom
+    per le rispettive direzioni.-->
+    <body style="
+    height:3000px;
+    padding-top: 50px;">
+        <div style="
+        background-color: black;
+        color: white;
+        height: 50px;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        "> intestazione </div>
+        
+        <div style="
+        background-color: lightblue;
+        height:200px;
+        position: static;
+        width:200px;
+        "> div 1 </div>
+        
+        <div style="
+        background-color: lightpink;
+        height:200px;
+        width:200px;
+        "> div 2 </div>
+    </body>
+</html>

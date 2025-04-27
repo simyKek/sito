@@ -1,0 +1,60 @@
+<style>
+    /* In generale, gli elementi vengono allineati in base al TESTO */
+    .youtube {
+        background-color: rgb(204, 0, 0);
+        border: none;
+        border-radius: 2px;
+        color: white;
+        cursor: pointer;
+        /* Margin permette di aggiungere spazio tra i bordi e l'oggetto */
+        margin-right: 8px;
+        margin-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+    }
+
+    .youtube:hover {
+        opacity: 0.4;
+    }
+
+    .youtube:active {
+        /* Richiede 4 parametri: 
+            - Posizione ORIZZONTALE dell'ombra
+            - Posizione VERTICALE dell'ombra
+            - Sfumatura dell'ombra
+            - Colore dell'ombra
+        */
+        box-shadow: 10px 10px 10px black;
+    }
+
+    .join {
+        background-color: white;
+        color: rgb(102, 102, 255);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        border-color: rgb(102, 102, 255);
+        cursor: pointer;
+        /* Padding rappresenta lo spazio ALL'INTERNO di un oggetto dal suo bordo*/
+        padding-top: 9px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        transition: background-color 0.3s,
+            color 0.3s;
+    }
+
+    .join:hover {
+        background-color: rgb(102, 102, 255);
+        color: white;
+    }
+
+
+</style>
+
+<button class = "youtube"> ISCRIVITI </button>
+<button class = "join"> JOIN</button>

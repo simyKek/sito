@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pratica Griglie</title>
+    </head>
+    <body>
+        <!-- Grid-template-coolums indica la larghezza di ogni cella-->
+        <div style = "display: grid; grid-template-columns: 100px 100px;">
+            <div style="background-color: lightblue;">
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                div 2 <p> Testo </p>
+            </div>
+        </div>
+        <div style = "
+        display: grid; 
+        grid-template-columns: 100px 100px 200px 100px; 
+        margin-top: 30px;">
+            <div style="background-color: lightblue;">
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                div 2 <p> Testo </p>
+            </div>
+            <div style="background-color: lightblue;">
+                div 3
+            </div>
+            <div style="background-color: lightpink;">
+                div 4
+            </div>
+        </div>
+
+        <!--1 fr = FREE ROOM, prende tutto la spazio disponibile-->
+        <div style = "
+        display: grid; 
+        grid-template-columns: 100px 1fr; 
+        margin-top: 30px;">
+            <div style="background-color: lightblue;">
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                div 2
+            </div>
+        </div>
+
+        <!-- Se ci sono 2 o più fr, si dividono lo spazio equamente-->
+        <div style = "
+        display: grid; 
+        grid-template-columns: 100px 1fr 1fr; 
+        margin-top: 30px;">
+            <div style="background-color: lightblue;">
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                div 2
+            </div>
+            <div style="background-color: lightblue;">
+                div 3
+            </div>
+        </div>
+    </body>
+</html>
